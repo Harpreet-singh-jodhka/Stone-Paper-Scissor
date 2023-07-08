@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="upperDiv">
+        <h2 class="headingLeft">ROCK <br> PAPER <br> SCISSORS</h2>
+
+
+
+        <div class="scores">
+            <div class="computerScore">
+                <p>COMPUTER <br> SCORE</p>
+                <div id="compScore">0</div>
+            </div>
+            <div class="yourScore">
+                <p>YOUR <br> SCORE</p>
+                <div id="yrScore">0</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lowerDiv">
+
+        <div class="triangle">
+            <div class="side1"></div>
+            <div class="side2"></div>
+            <div class="side3"></div>
+        </div>
+
+        <div class="stone hand" id="stone" onclick="userClicked(event)">
+        </div>
+        <div class="scissor hand" id="scissor" onclick="userClicked(event)">
+        </div>
+        <div class="paper hand" id="paper" onclick="userClicked(event)">
+        </div>
+    </div>
+
+    <div class=" gameRules" id="gameRulesBox">
+            <h4>Game Rules</h4>
+            <nav>
+                <ul class="rulesList">
+                    <li>Rocks beat scissors, scissors beat <br> paper, and paper beats rock</li>
+                    <li>Agree ahead of time whether you'll <br> count off "rock, paper, scissors, <br> shoot" or just
+                        "rock,paper, scissors."</li>
+                    <li>Use rock, paper, scissors to settle <br> minor decisions or simply play to <br> pass the time
+                    </li>
+                    <li>if both players lay down the same <br> hand, each player lays down another <br> hand</li>
+                </ul>
+            </nav>
+            <button onclick="disappearGamerules()">X</button>
+        </div>
+
+        <!-- ANOTHER HIDDEN BOX LIKE AN ANOTER PAGE.  -->
+        <div class="answer">
+
+            <div class="youPicked">
+                <h2>YOU PICKED</h2>
+                <div class="outer">
+                    <div class="imgYouPicked"></div>
+                </div>
+                
+            </div>
+
+
+            <div class="infoWin">
+                <h1 id="uwin">YOU WIN</h1>
+                <br>
+                <h3 id="pcagainst">AGAINST PC</h3>
+                <br>
+                <button id="playAgain" onclick="playAGAIN()">PLAY AGAIN</button>
+            </div>
+
+            <div class="pcPicked">
+                <h2>PC PICKED</h2>
+                <div class="imgPcPicked"></div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+    <button class="buttonRules" id="buttonRules" onclick="rulesAppears()">RULES</button>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
